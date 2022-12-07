@@ -1,0 +1,26 @@
+
+<%- include('../partials/header') %>
+
+<h1>This is the new request form page.</h1>
+<form id="new-form" action="/requests" method="POST">
+    <label>Request Type:</label>
+    <select name="requestType">
+        <option value="Service Request">Service</option>
+        <option value="Prayer Request">Prayer</option>
+    </select>
+    <label>Date:</label>
+    <input type="datetime-local" name="date" value="2022-11-29T19:30">
+    <label>Estimated Hours Each Day:</label>
+    <select name="hoursEstimate">
+        <option value="Less than 1 hour">Less than 1 hour</option>
+        <option value="1 hour">1 hour</option>
+        <option value="2 hours">2 hours</option>
+        <option value="3 hours">3 hours</option>
+        <option value="4 hours">4 hours</option>
+        <option value="5 hours">5 hours</option>
+        <option value="6+ hours">6+ hours</option>
+    </select>
+    <label>Description:</label>
+    <input type="text" name="content">
+    <input type="submit" value="Add Request">
+</form>
