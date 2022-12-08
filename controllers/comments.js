@@ -2,6 +2,20 @@ const Request = require('../models/request');
 
 module.exports = {
     create,
+    delete: deleteComment
+}
+
+function deleteComment(req, res){
+    Request.findOne({'comments._id': req.params.id, 'comments.user': req.user._id}, function (err, requestDoc) {
+        if (!requestDoc) return res.redirect('/requests');
+
+        requestDoc.comments.remove(req.params.id);
+
+        requestDoc.save(function(err){
+            if(err) return res.send('err, check terminal fix this');
+            res.redirect(`/requests/${requestDoc._id}`)
+          })
+    })
 }
 
 function create(req, res){
