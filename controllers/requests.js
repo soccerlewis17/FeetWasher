@@ -12,9 +12,10 @@ function show(req, res) {
   console.log(req.session, '<---- req.session');
 
   Request.findById(req.params.id, function(err, requestDoc){
-    console.log(requestDoc); // works!
-    // Comment.find({flight: flightDoc._id}, function(err, ticketDoc) {
-    // res.render('requests/show', {request: requestDoc, comment: commentDoc});
+    console.log(requestDoc, '<--------------- requestDoc for show page');
+    // Comment.find({request: requestDoc._id}, function(err, commentDoc) {
+    res.render('requests/show', {request: requestDoc});
+    // res.render(`requests/${req.params.id}`, {request: requestDoc, comment: commentDoc});
     // })
   });
 }
