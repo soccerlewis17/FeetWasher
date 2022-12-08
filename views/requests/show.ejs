@@ -6,8 +6,12 @@
     <div><%= request.avatar %></div>    
     <div><%= request.userName %></div>
     <div><%= request.requestType %></div>
+    <% if (request.date) { %> 
     <div>Date: <%= request.date.toLocaleDateString() %></div>
+    <% } %> 
+    <% if (request.hoursEstimate) { %>
     <div>Estimated Time: <%= request.hoursEstimate %></div>
+    <% } %> 
     <div><%= request.content %></div>
     <br>
     <% if (user && user._id.equals(request.user)) { %>
