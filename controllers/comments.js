@@ -2,8 +2,24 @@ const Request = require('../models/request');
 
 module.exports = {
     create,
-    delete: deleteComment
+    delete: deleteComment,
+    update
 }
+
+function update(req, res) {
+    Request.findOne({'comments._id': req.params.id}, function(err, requestDoc) {
+        console.log(requestDoc, '=============== requestDoc from update function =========');
+      const commentSubdoc = requestDoc.comments.id(req.params.id);
+      // Ensure that the comment was created by the logged in user
+      if (!commentSubdoc.user.equals(req.user._id)) return res.redirect(`/requests/${requestDoc._id}`);
+      // Update the text of the comment
+      commentSubdoc.content = req.body.content;
+      requestDoc.save(function(err) {
+        res.redirect(`/requests/${requestDoc._id}`);
+      });
+    });
+  }
+
 
 function deleteComment(req, res){
     Request.findOne({'comments._id': req.params.id, 'comments.user': req.user._id}, function (err, requestDoc) {
