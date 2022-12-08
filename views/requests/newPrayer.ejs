@@ -1,0 +1,13 @@
+
+<%- include('../partials/header') %>
+
+<h1>New Prayer Request</h1>
+<form id="newPrayer-form" action="/requests" method="POST">
+    <label>Request Type:</label>
+    <select name="requestType">
+        <option value="Prayer Request">Prayer</option>
+    </select>
+    <label>Description:</label>
+    <input type="text" name="content">
+    <input type="submit" value="Add Request">
+</form>

@@ -10,6 +10,12 @@
     <div>Estimated Time: <%= request.hoursEstimate %></div>
     <div><%= request.content %></div>
     <br>
+    <% if (user && user._id.equals(request.user)) { %>
+        <form action="/requests/<%= request._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete Request</button>
+        </form>
+      <% } %>
+    <br>
     <br>
     <form id="new-comment" action='/requests/<%= request._id %>/comments' method="POST">
         <input type="text" name="content">
