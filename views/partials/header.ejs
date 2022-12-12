@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
     <title>FeetWasher</title>
   </head>
   
   <body>
-    <nav>
-      <!-- <img src="/images/camera.svg"> -->
-      <a href="/requests">ALL REQUESTS</a>
+    <nav class="navbar">
+      <img src="https://imgur.com/gallery/WvKWUEP">
+      <div>
+        <a href="/requests">ALL REQUESTS</a>
+      </div>
       <% if (user) { %>
-        <a href="/requests/newService">ADD SERVICE REQUEST</a>
-        <a href="/requests/newPrayer">ADD PRAYER REQUEST</a>
-        <a href="/logout">LOG OUT</a>
+        <div>
+            <a href="/requests/newService">ADD SERVICE REQUEST</a>
+        </div>
+        <div>
+            <a href="/requests/newPrayer">ADD PRAYER REQUEST</a>
+        </div>
+        <div>
+            <a href="/logout">LOG OUT</a>
+        </div>
       <% } else { %>
-        <a href="/auth/google" class="login">LOG IN</a>
+        <div>
+            <a href="/auth/google" class="login">LOG IN</a>
+        </div>
       <% } %>
     </nav>
-    <main>
+  </body>
+<main>

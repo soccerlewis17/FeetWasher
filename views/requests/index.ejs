@@ -1,17 +1,27 @@
 
 <%- include('../partials/header') %>
 
-
-<h1>All Requests</h1>
-
-<table class="request-lists">
-      <% requests.forEach(function(r) { %>
-        <div><%= r.userName %></div>
-        <div><%= r.requestType %></div>
-        <% if (r.date) { %> 
-        <div>Service Date: <%= r.date %></div>
-        <% } %> 
-        <div><%= r.content %></div>
-        <div><a href="/requests/<%= r._id %>">VIEW</a></div>
+<main class="index-page">
+    <h1 id="allRequests-header">All Requests</h1>
+    <br>
+    <div class="indexRequests">
         <br>
+            <% requests.forEach(function(r) { %>
+            <div class="indexRequest">
+        <section>
+            <div><strong><%= r.userName %></strong></div>
+            <div><em><%= r.requestType %></em></div>
+            <% if (r.date) { %> 
+            <div>For: <%= r.date %></div>
+        </section>
+            <% } %> 
+            <br>
+            <div><a href="/requests/<%= r._id %>">
+            <button class="viewBtns">VIEW</button></a>
+        </div>
+            <br>
+            <hr>
+        </div>
       <% }); %>
+    </div>
+</main>

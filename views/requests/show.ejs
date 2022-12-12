@@ -1,11 +1,12 @@
 
 <%- include('../partials/header') %>
-<br>
-<br>
-
+<main class="show-page">
+    <br>
+    <br>
+    <section id="requestShow">
     <div><%= request.avatar %></div>    
-    <div><%= request.userName %></div>
-    <div><%= request.requestType %></div>
+    <div><strong><%= request.userName %></strong></div>
+    <div><em><%= request.requestType %></em></div>
     <% if (request.date) { %> 
     <div>Date: <%= request.date.toLocaleDateString() %></div>
     <% } %> 
@@ -13,6 +14,7 @@
     <div>Estimated Time: <%= request.hoursEstimate %></div>
     <% } %> 
     <div><%= request.content %></div>
+    </section>
     <br>
     <% if (user && user._id.equals(request.user)) { %>
         <form action="/requests/<%= request._id %>?_method=DELETE" method="POST">
@@ -21,6 +23,8 @@
       <% } %>
     <br>
     <br>
+
+
     <form id="new-comment" action='/requests/<%= request._id %>/comments' method="POST">
         <input type="text" name="content">
         <input type="submit" value="Add Comment">
@@ -31,14 +35,9 @@
           <tbody>
               <% request.comments.forEach(function(r) { %>
                   <tr>
-                    <td class="comment-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %></td>
-                    <td>
+                    <td class="comment-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %>
                       <%= r.createdAt.toLocaleDateString() %>
-                    </td>
-                    <td>
                       <%= r.content %>
-                    </td>
-                    <td>
                       <% if (user && user._id.equals(r.user)) { %>
                         <form action="/comments/<%= r._id %>?_method=DELETE" method="POST">
                           <button type="submit">Delete</button>
@@ -56,3 +55,4 @@
         <% } else { %>
           <h5>No Comments Yet</h5>
           <% } %>
+</main>

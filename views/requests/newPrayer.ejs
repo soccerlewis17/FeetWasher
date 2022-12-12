@@ -1,13 +1,21 @@
 
 <%- include('../partials/header') %>
 
+<main class="newPrayer-page">
 <h1>New Prayer Request</h1>
 <form id="newPrayer-form" action="/requests" method="POST">
-    <label>Request Type:</label>
-    <select name="requestType">
-        <option value="Prayer Request">Prayer</option>
-    </select>
-    <label>Description:</label>
-    <input type="text" name="content">
-    <input type="submit" value="Add Request">
+    <div>
+        <label>Request Type:</label>
+        <select name="requestType">
+            <option value="Prayer Request">Prayer</option>
+        </select> 
+    </div>
+    <br>
+    <div id="newPrayer-description">
+        <label>Description:</label>
+        <textarea type="text" name="content"></textarea>
+    </div>
+    <br>
+        <input type="submit" id="addPrayer-Btn" value="Add Request">
 </form>
+</main>

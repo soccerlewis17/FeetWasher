@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // embed the comments onto a request since the comments will always belong to one request
 const commentsSchema = new Schema({
     user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
-    avatar: String,
+    userAvatar: String,
     userName: {type: String, required: true},
     content: {type: String, required: true},
   },

@@ -1,3 +1,11 @@
+/* colors 
+red color is #C64639
+green color is #72C639
+teel color is #39B9C6
+purple color is #8D39C6
+*/
+
+
 .brand-logo {
   margin-left: 15px;
 }
@@ -19,13 +27,168 @@
   margin-top: -5px;
 }
 
-.review-user {
+.comment-user {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.review-user img {
+.comment-user img {
   border-radius: 50%;
   height: 40px;
+}
+
+.allRequests {
+  background-color: rgb(212, 211, 246);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  color: white;
+  background-color: #C64639;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.newPrayer-page {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#newPrayer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newPrayer-form:div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newPrayer-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newService-page {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#newService-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newService-form:div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newService-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#addService-Btn {
+  background-color: white;
+  color: #39B9C6;
+  border-radius: 12px;
+  border: 2px solid #39B9C6;
+  padding: 14px 40px;
+}
+
+#addService-Btn:hover {
+  background-color: #39B9C6;
+  color: white;
+}
+
+#addPrayer-Btn {
+  background-color: white;
+  color: #39B9C6;
+  border-radius: 12px;
+  border: 2px solid #39B9C6;
+  padding: 14px 40px;
+}
+
+#addPrayer-Btn:hover {
+  background-color: #39B9C6;
+  color: white;
+}
+
+.show-page {
+  background-color: rgb(230, 230, 230);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indexRequests {
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewBtns {
+  background-color: white;
+  color: #39B9C6;
+  border-radius: 12px;
+  border: 2px solid #39B9C6;
+}
+
+.viewBtns:hover {
+  background-color: #39B9C6;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.index-page {
+  display: flex;
+  background-color: rgb(230, 230, 230);
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.request-info {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: #C64639;
+  font-size: 60px;
+  padding-left: 15%;
+  padding-right: 15%;
+  border: 3px solid #C64639;
+}
+
+#requestShow {
+  background-color: white;
+}
+
+textarea {
+  height: 70;
+  width: 400;
 }
