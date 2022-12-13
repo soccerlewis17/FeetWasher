@@ -269,3 +269,28 @@ textarea {
 hr {
   border: 3px solid rgb(230, 230, 230);
 }
+
+#navbarLogo, #footerLogo {
+  width: 3%;
+}
+
+#footerLogo {
+  width: 7%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  color: white;
+  background-color: #C64639;
+}
+
+.logoName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
