@@ -1,5 +1,3 @@
-<img src="https://i.imgur.com/XseXU8J.png" width="900">
-
 <h1>FeetWasher</h1>
 
 <h3>Background</h3>
@@ -14,4 +12,4 @@ The name "FeetWasher" is inspired by the practice of washing feet in Biblical ti
 
 <h3>Planning</h3>
 
-<img src="https://imgur.com/uo4dWuA">
+<img src="https://i.imgur.com/uo4dWuA.png">
