@@ -323,3 +323,8 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
+.index-user-img {
+  border-radius: 50%;
+  height: 80px;
+}
