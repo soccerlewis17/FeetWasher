@@ -12,4 +12,4 @@ The name "FeetWasher" is inspired by the practice of washing feet in Biblical ti
 
 <h3>Planning</h3>
 
-<img href="https://imgur.com/gallery/MUbyQBy">
+<img src="https://imgur.com/gallery/MUbyQBy">
