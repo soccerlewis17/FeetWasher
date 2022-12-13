@@ -11,6 +11,7 @@ const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
 const requestsRoutes = require('./routes/requests');
 const commentsRoutes = require('./routes/comments');
+const MongoStore = require('connect-mongo');
 
 
 // create the Express app
@@ -35,6 +36,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 // mount the session middleware
 app.use(session({
+  store: MongoStore.create({
+    mongoUrl: process.env.DATABASE_URL
+  }),
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true
