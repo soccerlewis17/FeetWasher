@@ -1,11 +1,11 @@
 
 <%- include('../partials/header') %>
 
-<body class="show-page">
+<main class="show-page">
     <br>
     <br>
     <section id="requestShow">
-    <div><%= request.avatar %></div> 
+    <div><img class="request-user-img" alt="avatar" src="<%= request.userAvatar %>" referrerpolicy="no-referrer" ></div> 
     <br>   
     <div><strong><%= request.userName %></strong></div>
     <br>
@@ -31,11 +31,11 @@
 
 
     <form id="new-comment" action='/requests/<%= request._id %>/comments' method="POST">
-        <input type="text" name="content">
-        <input type="submit" value="Add Comment">
+        <textarea id="commentInput" type="text" name="content"></textarea>
+        <input id="addCommentBtn" type="submit" value="Add Comment">
     </form>
     <br>
-    <h3>Comments</h3>
+    <h2>Leave a comment!</h2>
     <% if (request.comments.length) { %>
         <table class="commentTable">
           <tbody>
@@ -66,6 +66,6 @@
         <% } else { %>
           <h5>No Comments Yet</h5>
           <% } %>
-</body>
+</main>
 
 <%- include('../partials/footer') %>

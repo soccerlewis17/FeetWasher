@@ -16,7 +16,7 @@ const commentsSchema = new Schema({
 
 const requestsSchema = new Schema({
   user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
-  avatar: String,
+  userAvatar: String,
   userName: {type: String, required: true}, 
   requestType: {type: String, required: true},
   date: Date,

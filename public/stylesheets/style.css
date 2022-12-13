@@ -125,7 +125,7 @@ a:link, a:visited {
 
 .show-page {
   background-color: rgb(230, 230, 230);
-  /* height: 100%; */
+  min-height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,7 +158,7 @@ a:link, a:visited {
   background-color: rgb(230, 230, 230);
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  min-height: 90%;
 }
 
 .request-info {
@@ -293,4 +293,33 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+}
+
+.request-user-img {
+  border-radius: 50%;
+  height: 80px;
+}
+
+#addCommentBtn {
+  background-color: white;
+  color: #39B9C6;
+  border-radius: 12px;
+  border: 2px solid #39B9C6;
+  padding: 10px 24px;
+}
+
+#addCommentBtn:hover {
+  background-color: #39B9C6;
+  color: white;
+}
+
+#commentInput {
+  width: 100%;
+  height: 10%;
+}
+
+#new-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
