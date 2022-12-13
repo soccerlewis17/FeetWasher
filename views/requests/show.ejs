@@ -4,24 +4,28 @@
     <br>
     <br>
     <section id="requestShow">
-    <div><%= request.avatar %></div>    
+    <div><%= request.avatar %></div> 
+    <br>   
     <div><strong><%= request.userName %></strong></div>
+    <br>
     <div><em><%= request.requestType %></em></div>
     <% if (request.date) { %> 
+    <br>
     <div>Date: <%= request.date.toLocaleDateString() %></div>
+    <div>Time: <%= request.date.toLocaleTimeString() %></div>
     <% } %> 
     <% if (request.hoursEstimate) { %>
     <div>Estimated Time: <%= request.hoursEstimate %></div>
     <% } %> 
+    <br>
     <div><%= request.content %></div>
-    </section>
     <br>
     <% if (user && user._id.equals(request.user)) { %>
         <form action="/requests/<%= request._id %>?_method=DELETE" method="POST">
-          <button type="submit">Delete Request</button>
+          <button id="deleteRequest-Btn" type="submit">Delete Request</button>
         </form>
       <% } %>
-    <br>
+    </section>  
     <br>
 
 
@@ -30,22 +34,28 @@
         <input type="submit" value="Add Comment">
     </form>
     <br>
+    <h3>Comments</h3>
     <% if (request.comments.length) { %>
-        <table>
+        <table class="commentTable">
           <tbody>
               <% request.comments.forEach(function(r) { %>
                   <tr>
-                    <td class="comment-user"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><%= r.userName %>
-                      <%= r.createdAt.toLocaleDateString() %>
-                      <%= r.content %>
+                    <td class="comment-user">
+                      <div class="commentRow-1"><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" ><strong><%= r.userName %></strong>
+                        <%= r.createdAt.toLocaleDateString() %>
+                        <%= r.createdAt.toLocaleTimeString() %> 
+                      </div>
+                      <div class="commentRow-2"><%= r.content %></div>
+                      <div class="commentRow-3">
                       <% if (user && user._id.equals(r.user)) { %>
                         <form action="/comments/<%= r._id %>?_method=DELETE" method="POST">
-                          <button type="submit">Delete</button>
+                          <button class="deleteComment-Btns" type="submit">Delete</button>
                         </form>
                         <form action="/comments/<%= r._id %>?_method=PUT" method="POST">
                             <input type="text" name="content">
-                            <button type="submit">Edit</button>
+                            <button class="editComment-Btns"type="submit">Edit</button>
                         </form>
+                     </div>
                       <% } %>
                     </td>
                   </tr>

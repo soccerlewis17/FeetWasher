@@ -27,17 +27,6 @@ purple color is #8D39C6
   margin-top: -5px;
 }
 
-.comment-user {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.comment-user img {
-  border-radius: 50%;
-  height: 40px;
-}
-
 .allRequests {
   background-color: rgb(212, 211, 246);
 }
@@ -155,6 +144,7 @@ a:link, a:visited {
   color: #39B9C6;
   border-radius: 12px;
   border: 2px solid #39B9C6;
+  text-align: end;
 }
 
 .viewBtns:hover {
@@ -186,9 +176,96 @@ h1 {
 
 #requestShow {
   background-color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 textarea {
   height: 70;
   width: 400;
+}
+
+#deleteRequest-Btn {
+  background-color: white;
+  color: #C64639;
+  border-radius: 12px;
+  border: 2px solid #C64639;
+  padding: 10px 24px;
+}
+
+#deleteRequest-Btn:hover {
+  background-color: #C64639;
+  color: white;
+}
+
+.deleteComment-Btns {
+  background-color: white;
+  color: #C64639;
+  border-radius: 12px;
+  border: 2px solid #C64639;
+  font-size: 10px;
+}
+
+.editComment-Btns {
+  background-color: white;
+  color: #39B9C6;
+  border-radius: 12px;
+  border: 2px solid #39B9C6;
+  font-size: 10px;
+}
+
+.commentRow-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.commentRow-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.commentRow-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+.comment-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.comment-user img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.commentTable:tbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+hr {
+  border: 3px solid rgb(230, 230, 230);
 }
