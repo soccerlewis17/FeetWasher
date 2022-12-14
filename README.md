@@ -3,6 +3,7 @@
 <img src="https://i.imgur.com/N2rnKTk.png">
 
 <h3>Background</h3>
+
 As a member of several churches over a number of years, one thing that always seems to come up is a disconnect between people that need help and other members who would love to help, but simply had no idea there was a need. There are elderly people who need lawn care, physically disabled people who just need a ride to appointments and even young couples who could use an extra hand or two moving into their new house.
 
 Inspired by the church in Acts, who demonstrated what it was like to live in true community, I wanted to build a space where people could communicate those needs and fill them for others. Knowing that this platform could bring a church together in love and service, I decided to add prayer requests to the existing service forum. In all, my hope is greater than that of needs being met; my hope is that authentic community is reborn.
@@ -25,17 +26,18 @@ The name "FeetWasher" is inspired by the practice of washing feet in Biblical ti
 
 <h5>Wireframe</h5>
 
-Index page for all requests
 <img src="https://i.imgur.com/uo4dWuA.png">
+Index page for all requests
 
-Show page for each request
 <img src="https://i.imgur.com/w14qzmO.png">
+Show page for each request
 
-Form page for new requests
 <img src="https://i.imgur.com/WK1jNkc.png">
+Form page for new requests
 
 
 <h5>Entity-Relationship-Diagram (ERD) Diagram</h5>
+
 <img src="https://i.imgur.com/VAA6rwK.png">
 
 
@@ -54,24 +56,24 @@ Form page for new requests
 
 <h3>Screenshots</h3>
 
-Index page
 <img src="https://i.imgur.com/OhGRTOS.png">
+Index page
 
-Show page for each request
 <img src="https://i.imgur.com/3tPp58j.png">
+Show page for each request
 
-Form page for new service requests
 <img src="https://i.imgur.com/lKJG72i.png">
+Form page for new service requests
 
-Form page for new prayer requests
 <img src="https://i.imgur.com/zqZanzf.png">
+Form page for new prayer requests
 
 
 <h3>Getting Started</h3>
 
-View FeetWasher here: https://pink-bewildered-parrot.cyclic.app/requests
+View <strong><em>FeetWasher</em></strong> here: https://pink-bewildered-parrot.cyclic.app/requests
 
-View Trello board for planning: https://trello.com/b/WcfjQYH1/feetwasher
+View Trello project board for planning here: https://trello.com/b/WcfjQYH1/feetwasher
 
 
 <h3>Next Steps</h3>
