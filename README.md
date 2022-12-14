@@ -26,17 +26,17 @@ The name "FeetWasher" is inspired by the practice of washing feet in Biblical ti
 
 <h5>Wireframe</h5>
 
+Index page for all requests (below)
 <img src="https://i.imgur.com/uo4dWuA.png">
-Index page for all requests above
 
+Show page for each request (below)
 <img src="https://i.imgur.com/w14qzmO.png">
-Show page for each request above
 
+Form page for new requests (below)
 <img src="https://i.imgur.com/WK1jNkc.png">
-Form page for new requests above
 
 
-<h5>Entity-Relationship-Diagram (ERD) Diagram Below</h5>
+<h5>Entity-Relationship-Diagram (ERD) Diagram</h5>
 
 <img src="https://i.imgur.com/VAA6rwK.png">
 
@@ -56,17 +56,17 @@ Form page for new requests above
 
 <h3>Screenshots</h3>
 
+Index page (below)
 <img src="https://i.imgur.com/OhGRTOS.png">
-Index page above
 
+Show page for each request (below)
 <img src="https://i.imgur.com/3tPp58j.png">
-Show page for each request above
 
+Form page for new service requests (below)
 <img src="https://i.imgur.com/lKJG72i.png">
-Form page for new service requests above
 
+Form page for new prayer requests (below)
 <img src="https://i.imgur.com/zqZanzf.png">
-Form page for new prayer requests above
 
 
 <h3>Getting Started</h3>
