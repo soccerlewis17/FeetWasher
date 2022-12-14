@@ -1,5 +1,7 @@
 <h1>FeetWasher</h1>
 
+<img src="https://i.imgur.com/N2rnKTk.png">
+
 <h3>Background</h3>
 As a member of several churches over a number of years, one thing that always seems to come up is a disconnect between people that need help and other members who would love to help, but simply had no idea there was a need. There are elderly people who need lawn care, physically disabled people who just need a ride to appointments and even young couples who could use an extra hand or two moving into their new house.
 
@@ -12,7 +14,68 @@ The name "FeetWasher" is inspired by the practice of washing feet in Biblical ti
 
 <h3>Planning</h3>
 
-Wireframe
+<h5>User Stories</h5>
+<ul>
+    <li><em>As a user, I want to be able to create new requests. One request belongs to one user. A user can have multiple requests.</em></li>
+    <li><em>As a user, I want to be able to see all of the church's requests.</em></li>
+    <li><em>As a user, I want to be able to comment on other people's requests. One request can have multiple comments, but all comments belong to one request.</em></li>
+    <li><em>As a user, I want to be able to update my request.</em></li>
+    <li><em>As a user, I want to be able to delete my request.</em></li>
+</ul>
 
-Index Page for all requests
+<h5>Wireframe</h5>
+
+Index page for all requests
 <img src="https://i.imgur.com/uo4dWuA.png">
+
+Show page for each request
+<img src="https://i.imgur.com/w14qzmO.png">
+
+Form page for new requests
+<img src="https://i.imgur.com/WK1jNkc.png">
+
+
+<h5>Entity-Relationship-Diagram (ERD) Diagram</h5>
+<img src="https://i.imgur.com/VAA6rwK.png">
+
+
+<h3>Technologies Used</h3>
+<ul>
+    <li><em>Javascript</em></li>
+    <li><em>HTML</em></li>
+    <li><em>CSS</em></li>
+    <li><em>Mongo DB</em></li>
+    <li><em>Node</em></li>
+    <li><em>Express</em></li>
+    <li><em>Mongoose</em></li>
+    <li><em></em></li>
+</ul>
+
+
+<h3>Screenshots</h3>
+
+Index page
+<img src="https://i.imgur.com/OhGRTOS.png">
+
+Show page for each request
+<img src="https://i.imgur.com/fE5msVh.png">
+
+Form page for new service requests
+<img src="https://i.imgur.com/lKJG72i.png">
+
+Form page for new prayer requests
+<img src="https://i.imgur.com/zqZanzf.png">
+
+
+<h3>Getting Started</h3>
+
+
+<h3>Next Steps</h3>
+
+Some features I'd like to add in order to further enhance the user experience include:
+<ul>
+    <li>Sort the index page requests from most recent to oldest.</li>
+    <li>An anonymous option for the new prayer request form, for those that want to retain some privacy.</li>
+    <li>Add a prayer emoji to the prayer requests so that others can know you are praying without having to comment, similar to a "like" button.</li>
+    <li>Show the edit comment text box only after the edit comment button is clicked.</li>
+</ul>
