@@ -27,16 +27,16 @@ The name "FeetWasher" is inspired by the practice of washing feet in Biblical ti
 <h5>Wireframe</h5>
 
 <img src="https://i.imgur.com/uo4dWuA.png">
-Index page for all requests
+Index page for all requests above
 
 <img src="https://i.imgur.com/w14qzmO.png">
-Show page for each request
+Show page for each request above
 
 <img src="https://i.imgur.com/WK1jNkc.png">
-Form page for new requests
+Form page for new requests above
 
 
-<h5>Entity-Relationship-Diagram (ERD) Diagram</h5>
+<h5>Entity-Relationship-Diagram (ERD) Diagram Below</h5>
 
 <img src="https://i.imgur.com/VAA6rwK.png">
 
@@ -57,16 +57,16 @@ Form page for new requests
 <h3>Screenshots</h3>
 
 <img src="https://i.imgur.com/OhGRTOS.png">
-Index page
+Index page above
 
 <img src="https://i.imgur.com/3tPp58j.png">
-Show page for each request
+Show page for each request above
 
 <img src="https://i.imgur.com/lKJG72i.png">
-Form page for new service requests
+Form page for new service requests above
 
 <img src="https://i.imgur.com/zqZanzf.png">
-Form page for new prayer requests
+Form page for new prayer requests above
 
 
 <h3>Getting Started</h3>
@@ -78,10 +78,11 @@ View Trello project board for planning here: https://trello.com/b/WcfjQYH1/feetw
 
 <h3>Next Steps</h3>
 
-Some features I'd like to add in order to further enhance the user experience include:
+Some features I'd like to add in the future in order to further enhance the user experience include:
 <ul>
     <li>Sort the index page requests from most recent to oldest.</li>
     <li>An anonymous option for the new prayer request form, for those that want to retain some privacy.</li>
     <li>Add a prayer emoji to the prayer requests so that others can know you are praying without having to comment, similar to a "like" button.</li>
     <li>Show the edit comment text box only after the edit comment button is clicked.</li>
+    <li>Additional CSS Styling</li>
 </ul>
