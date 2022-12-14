@@ -58,7 +58,7 @@ Index page
 <img src="https://i.imgur.com/OhGRTOS.png">
 
 Show page for each request
-<img src="https://i.imgur.com/fE5msVh.png">
+<img src="https://i.imgur.com/3tPp58j.png">
 
 Form page for new service requests
 <img src="https://i.imgur.com/lKJG72i.png">
@@ -68,6 +68,10 @@ Form page for new prayer requests
 
 
 <h3>Getting Started</h3>
+
+View FeetWasher here: https://pink-bewildered-parrot.cyclic.app/requests
+
+View Trello board for planning: https://trello.com/b/WcfjQYH1/feetwasher
 
 
 <h3>Next Steps</h3>
