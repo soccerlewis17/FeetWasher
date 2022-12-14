@@ -50,7 +50,6 @@ Form page for new requests (below)
     <li><em>Node</em></li>
     <li><em>Express</em></li>
     <li><em>Mongoose</em></li>
-    <li><em></em></li>
 </ul>
 
 
